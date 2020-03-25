@@ -5,19 +5,19 @@ new_text = text.lower()
 
 for i in new_text:
     if i in dict:
-        new_text = new_text.replace(i, dict[i]) + " "
+        new_text = new_text.replace(i, dict[i])
 
 print(new_text) #can't print it with spaces in between the output
 
 #given a list of numbers, find the largest number in the list
 number_list = [55, 24, 469, 421, 99, 1, 24]
-max = 0
+maximum = 0
 
 for num in number_list:
-    if num > max:
-        max = num
+    if num > maximum:
+        maximum = num
 
-print(f'Largest number in list: {max}')
+print(f'Largest number in list: {maximum}')
 
 #given a string of words, determine the length of the shortest word
 word_list = ['potato', 'path', 'python', 'car']
